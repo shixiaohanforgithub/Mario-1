@@ -1,6 +1,19 @@
 package marioTest;
 
 import java.awt.Canvas;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.image.BufferStrategy;
+
+import javax.swing.JFrame;
+
+import input.KeyInput;
+import mario.entity.Player;
+import marioTest.Id;
+
+
 import java.awt.Dimension;
 
 import javax.swing.JFrame;
@@ -11,6 +24,7 @@ public class Game extends Canvas implements Runnable{
 	public static final int HEIGHT=WIDTH/14*10;
 	public static final int SCALE = 4;
 	public static final String TITLE = "Mario";
+	public static Handler handler;
 	private Thread thread;
 	private boolean running= false;
 	
